@@ -12,7 +12,7 @@ app.use(fileupload());
 //setting up config file
 dotenv.config({ path: "backend/config/config.env" });
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", process.env.HOST);
+  res.setHeader("Access-Control-Allow-Origin",'http://localhost:3000');
   res.setHeader(
     "Access-Control-Allow-Headers",
     "Origin,X-Requested-With,Content-Type,Accept,Authorization"
